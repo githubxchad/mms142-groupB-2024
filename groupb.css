@@ -1,0 +1,92 @@
+/* Import Figtree font */
+body {
+    font-family: 'Figtree', sans-serif;
+    color: #333; /* Slightly off-black for the main text */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: maroon;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  /* Hero Banner */
+  .hero {
+    margin-top: 60px; /* To account for fixed navbar */
+  }
+  
+  .hero .hero-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Main Sections */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .report-section {
+    margin: 2rem 0;
+    width: 80%;
+  }
+  
+  .report-section h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .report-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    margin-top: 1rem;
+  }
+  
+  /* Glossary Section */
+  .glossary {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 1rem;
+    width: 80%;
+    margin: 2rem 0;
+  }
+  
+  .glossary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* References Section */
+  .references {
+    width: 80%;
+    padding: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
