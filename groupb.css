@@ -6,6 +6,24 @@ body {
     padding: 0;
   }
   
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Light gray for secondary button */
+    color: maroon; /* Dark gray text */
+    text-decoration: none;
+    font-size: 14px; /* Adjust as needed */
+    font-weight: 500;
+    border: 1px solid maroon; /* Border matches text color */
+    border-radius: 50px; /* Rounded edges for pill shape */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+  }
+
+  .btn:hover {
+      background-color: rgb(129, 68, 68); /* Dark gray on hover */
+      color: #ffffff; /* White text on hover */
+  }
+
   /* Navbar */
   nav {
     background-color: maroon;
@@ -52,10 +70,31 @@ body {
     padding: 2rem;
     padding-top: 32px;
   }
+
+  .chapters {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding-left: 4px;
+    align-items: stretch; /* Make sure items stretch to fill the width */
+    max-width: 1200px; /* Set the maximum width for the entire list */
+    margin: 0 auto; /* Center the list within the available space */
+  }
+
+  .chapter-list {
+    padding: 4px;
+    list-style-type: none; /* Removes the bullets */
+    display: flex;
+    justify-content: center; /* Center each item horizontally */
+    width: 100%; /* Expand each item to fill the available width */
+  }
   
   .report-section {
     margin: 2rem 0;
     width: 80%;
+  }
+
+  h1 {
+    text-align: center;
   }
   
   .report-section h1 {
@@ -100,6 +139,47 @@ body {
   .references {
     width: 80%;
     padding: 1rem;
+  }
+
+  .references-list {
+    line-height: 200%;
+  }
+
+  /* Authors */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .photo-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      background-color: #ffffff;
+      /* border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+
+  .photo-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #6c757d;
+      margin-bottom: 10px;
+  }
+
+  .photo-card .name {
+      font-size: 16px;
+      color: #333;
+      margin: 0;
+      font-weight: 500;
   }
   
   /* Footer */
