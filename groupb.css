@@ -284,6 +284,10 @@ body {
     font-size: 14px;
   }
 
+  .references-list {
+    max-width: auto;
+  }
+
   footer {
     content:inherit;
   }
